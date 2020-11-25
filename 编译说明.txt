@@ -1,0 +1,63 @@
+
+
+                        此版本为修改后版本
+修改内容：
+1 支持vs2010编译
+2 修改了call_out.c中，可能会出现所有call out吊死的bug
+3 修改了原始代码中，对.b二进制文件处理的bug，会导致反复编译，从而使得comp lines居高不下（如果mudlib目录下没有binaries文件夹，则需手动创建一个，这里的binaries文件夹是在runtime config里配置的二进制目录名）
+
+vs2010编译步骤（工程文件为mudos\mudos.sln）
+
+1 清除原编译过的文件执行clean.bat，手动删除v22pre11\MUDOS\Release目录下全部文件
+2 编译editsource（编译editsource的时候，要注释掉std.h里的#include <windows.h>）
+3 执行grammar.bat，生成grammar.c文件（重要！）
+4 编译mudos（编译mudos的时候，打开std.h里的#include <windows.h>）
+
+
+
+
+
+
+
+
+
+
+
+
+
+以下为原版本编译说明
+
+
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+         Mudos V22pre11 for WIN95/NT with COM extension Version 1.1
+                          add MySQL DB Package
+                                编译说明
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+
+
+编译是以“Mudos V22pre11 for WIN95/NT with COM extension Version 1.1”的源程序包ossrc.zip为基础的
+编译环境为 Win2000 Professional、VC++ 6、mysql-3.23.39a-win
+
+1、按照Find@TX发布的说明修改了一些文件，并追加少量修改，修改前的源文件备份为.BAK，修改细节不陈述了。
+
+2、将mysql安装目录下include子目录中的mysql.h复制一份到VC++的include目录中；
+   将mysql安装目录下lib\debug子目录中的mysqlclient.lib复制一份到VC++的lib目录中；
+   将BISON.SIM复制一份到WINDOWS的安装目录下，并重命名为bison.simple。
+
+3、用VC++打开Mudos.dsw，设置MUDOS工程项目的setting，在Link部分增加了mysqlclient.lib。
+
+4、用VC++ build editsource，会附带生成名为grammar.y的文件。
+
+5、执行bison grammar.y，生成grammar.c文件（重要！）。
+  
+6、build mudos，生成mudos.exe。
+
+P.S. 除了增加8个efun外，还增加了一个名为valid_database的apply函数，
+     调用格式mixed valid_database(object ob, string action, mixed *info)，
+     apply类别的函数是用LPC写在MUDLIB中，但mudos执行时默认会去调用，
+     其目的类似CALL_BACK或外挂，使builder们能够灵活扩展功能吧。
+     本zip中附带一个Find写的valid_database的实现，在master文件中，可将其中代码追加到MUDLIB的master.c中。
+
+
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+

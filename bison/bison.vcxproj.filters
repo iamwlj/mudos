@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{06061ab4-37be-4afc-abc2-f5dcad60e29b}</UniqueIdentifier>
+      <Extensions>c</Extensions>
+    </Filter>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{bbe8879c-d02d-47f3-b2ad-5011e7ce7f02}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Alloca.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Allocate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Closure.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Conflict.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Derives.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Files.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Getargs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Getopt1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lalr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lr0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nullable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Print.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reduce.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Symtab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Warshall.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Files.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Getopt.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gram.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lex.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Machine.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="New.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Symtab.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

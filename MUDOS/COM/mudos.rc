@@ -1,0 +1,306 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""mcon.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "build by Anders\0"
+            VALUE "CompanyName", "MUD University\0"
+            VALUE "FileDescription", "Mudos v22.2b14 For WIN\0"
+            VALUE "FileVersion", "1, 1, 0, 1\0"
+            VALUE "InternalName", "Mudos\0"
+            VALUE "LegalCopyright", "Copyright (C) 2020-3000\0"
+            VALUE "LegalTrademarks", "P.R.C\0"
+            VALUE "OriginalFilename", "mudos.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Mudos v22.2b14 For WIN\0"
+            VALUE "ProductVersion", "1, 1, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SVR                 ICON    DISCARDABLE     "svr.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETUP_DLG DIALOG DISCARDABLE  0, 0, 213, 93
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "配置MUDOS"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,113,72,41,14
+    PUSHBUTTON      "取消",IDCANCEL,166,72,41,14
+    LTEXT           "MUDLIB的配置文件",IDC_STATIC,6,10,68,8
+    EDITTEXT        IDC_CFG_PATH,79,7,107,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BROWSER,186,7,20,14
+    LTEXT           "地址服务器端口",IDC_STATIC,6,28,57,8
+    LTEXT           "心跳(毫秒)",IDC_STATIC,6,46,37,8
+    EDITTEXT        IDC_HEART_BEAT,79,41,107,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "注册服务",IDREG,6,72,41,14
+    PUSHBUTTON      "注销服务",IDUNREG,60,72,41,14
+    EDITTEXT        IDC_ADDR_PORT,79,24,107,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SETUP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MUDOS_DESC          "MudOS Main Class"
+    IDS_MOBJECT_DESC        "MudOS Object Class"
+    IDS_MPROGRAM_DESC       "MudOS Program Class"
+    IDS_MVALUE_DESC         "MudOS Value Class"
+    IDS_MFUNCTION_DESC      "MudOS Function Class"
+    IDS_MCLASS_DESC         "MudOS Class Class"
+    IDS_MARRAY_DESC         "MudOS MArray Class"
+    IDS_MMAPPING_DESC       "MudOS MMapping Class"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NUMBER_DESC         "MudOS Number Class"
+    IDS_MAIN_WIN_VERSION    "当前的WINDOWS版本是%d.%02d."
+    IDS_MAIN_CANNOT_RUN     "MUDOS不能在这个平台上运行"
+    IDS_MAIN_NO_TCPIP       "无法初始化TCP/IP"
+    IDS_MAIN_ERROR          "MUDOS运行时错"
+    IDS_MAIN_NO_INI         "init字段中没有config选项"
+    IDS_MAIN_NO_CFG         "无法打开配置文件“%s”"
+    IDS_MAIN_BAD_CFG        "配置文件“%s”格式错误"
+    IDS_MAIN_SUCCESS        "MUDOS操作成功"
+    IDS_MAIN_MENU_ABOUT     "关于..."
+    IDS_MAIN_MENU_RESTART   "重启"
+    IDS_MAIN_MENU_SHUTDOWN  "关闭"
+    IDS_MAIN_ABOUT          "by Anders 码头 2020.11.20"
+    IDS_MAIN_FIRST_RUN      "请配置驱动 %s\n"
+    IDS_MAIN_DLG_END        "MudOS配置完成，如果你要重新配置，请运行“mudos setup”"
+    IDS_MAIN_USAGE          "可以使用的命令行选项是：\nregister\nunregister\nstart\nstop"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MAIN_REG_SERVICE    "注册服务"
+    IDS_MAIN_UNREG_SERVICE  "注销服务"
+    IDS_MAIN_MENU_SETUP     "配置"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETUP_DLG DIALOG DISCARDABLE  0, 0, 213, 93
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "MUDOS Config Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,113,72,41,14
+    PUSHBUTTON      "Cancel",IDCANCEL,166,72,41,14
+    LTEXT           "MUDLIB Config Path",IDC_STATIC,6,10,68,8
+    EDITTEXT        IDC_CFG_PATH,79,7,107,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSER,186,7,20,14
+    LTEXT           "Address Server Port",IDC_STATIC,6,28,68,8
+    LTEXT           "Heart Beat (msec)",IDC_STATIC,6,46,63,8
+    EDITTEXT        IDC_HEART_BEAT,79,41,107,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Register",IDREG,6,72,41,14
+    PUSHBUTTON      "Unregister",IDUNREG,60,72,41,14
+    EDITTEXT        IDC_ADDR_PORT,79,24,107,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SETUP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MUDOS_DESC          "MudOS Main Class"
+    IDS_MOBJECT_DESC        "MudOS Object Class"
+    IDS_MPROGRAM_DESC       "MudOS Program Class"
+    IDS_MVALUE_DESC         "MudOS Value Class"
+    IDS_MFUNCTION_DESC      "MudOS Function Class"
+    IDS_MCLASS_DESC         "MudOS Class Class"
+    IDS_MARRAY_DESC         "MudOS MArray Class"
+    IDS_MMAPPING_DESC       "MudOS MMapping Class"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NUMBER_DESC         "MudOS Number Class"
+    IDS_MAIN_WIN_VERSION    "Current WINDOWS version is %d.%02d."
+    IDS_MAIN_CANNOT_RUN     "Can't run MUDOS on this machine."
+    IDS_MAIN_NO_TCPIP       "Initialize TCP/IP failed."
+    IDS_MAIN_ERROR          "MUDOS runtime error"
+    IDS_MAIN_NO_INI         "No ""Config""  in init section"
+    IDS_MAIN_NO_CFG         "open config file failed."
+    IDS_MAIN_BAD_CFG        "bad format in config file."
+    IDS_MAIN_SUCCESS        "MUDOS"
+    IDS_MAIN_MENU_ABOUT     "About..."
+    IDS_MAIN_MENU_RESTART   "Restart"
+    IDS_MAIN_MENU_SHUTDOWN  "Shutdown"
+    IDS_MAIN_ABOUT          "Please use MudOS v22.2b14 for WIN95/NT with COM under GNU General Public License\nLPmud\t\tcopyright 1989, Lars Pensj\nMudOS\t\tcopyright 1991,1992 Erik Kay, Adam Beeman, Stephan Iannce, John Garnett\n\t\tcopyright 1995 George Reese, Tim Hollebeek\nCOM extension\tcopyright"
+    IDS_MAIN_FIRST_RUN      "First Time Running MudOS v22.2b14 for WIN95/NT with COM extension %s\n"
+    IDS_MAIN_DLG_END        "use ""mudos setup"" to see setup dialog next time."
+    IDS_MAIN_USAGE          "Available arguments are:\nregister\nunregister\nstart\nstop"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MAIN_REG_SERVICE    "Register Service"
+    IDS_MAIN_UNREG_SERVICE  "Unregister Service"
+    IDS_MAIN_MENU_SETUP     "Setup"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "mcon.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

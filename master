@@ -1,0 +1,39 @@
+/******************************************
+ * 在你的 MASTER_OB 中将这个函数加入即可  *
+ * 这里设定的是只能 euid 为 ROOT_UID 物件 *
+ * 使用数据库函数，你可以根据需要随意设置 *
+ *                                        *
+ * 返回值： int    1 无密码               *
+ *                 0 不允许操作           *
+ *          string   数据库用户密码       *
+ *                                        *
+ *   发现号(Find@TX)                      *
+ ******************************************/
+
+protected mixed valid_database(object ob, string action, mixed *info)
+{
+	if(!objectp(ob) || (geteuid(ob) != ROOT_UID))
+		return 0;
+
+	else
+	{
+		if(action == "connect")
+			/*
+			 * 这里演示的多站点数据库互动
+			 * 协作的返回密码写法，单站点
+			 * 简单返回密码即可
+			 */
+			switch (info[1])
+			{
+				case "1.1.1.1":   // 其它站点的地址
+					return "passwd_1"; // 这个站点上你的密码
+				case "localhost":
+					return "passwd_local";  // 本地密码
+				default:
+					return 0;
+			}
+
+		else
+			return 1;
+	}
+}

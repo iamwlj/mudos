@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Mudos Source Files">
+      <UniqueIdentifier>{940ed51f-d780-44c7-af19-08355599bbbe}</UniqueIdentifier>
+      <Extensions>*.c</Extensions>
+    </Filter>
+    <Filter Include="Mudos Header Files">
+      <UniqueIdentifier>{516846d3-c5bb-4f49-b426-6012a8df14b9}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Mudos Resource">
+      <UniqueIdentifier>{201ffc7f-6863-4f83-9ef9-8ae210ef42db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Os Source Files">
+      <UniqueIdentifier>{8efea0ad-52e0-4ba0-9ae4-9d56f3e8c6f1}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="array.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="avltree.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="binaries.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="call_out.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ccode.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cfuns.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="comm.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="compile_file.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\contrib.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc32.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="amiga\crypt.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PACKAGES\DB.C">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\develop.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="disassembler.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dll.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dumpstat.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ed.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="efuns_main.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="efuns_port.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eoperators.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="error.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\external.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generate.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="grammar.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="icode.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mudlib\interface.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="interpret.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lex.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\math.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\matrix.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="object.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="otable.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parse.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="port.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="program.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsort.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rc.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reclaim.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regexp.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="replace_program.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scratchpad.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simul_efun.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simulate.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smalloc.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="socket_efuns.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="socket_err.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\sockets.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sprintf.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stralloc.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strfuncs.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strstr.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swap.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sysmalloc.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trees.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\uids.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wrappedmalloc.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="addr_server.c">
+      <Filter>Os Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="socket_ctrl.c">
+      <Filter>Os Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Winmain.c">
+      <Filter>Os Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="add_action.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="function.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="master.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="applies_table.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PACKAGES\ntos.c">
+      <Filter>Mudos Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="applies.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arch.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="array.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avltree.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="backend.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="binaries.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bsdmalloc.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="call_out.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cc.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ccode.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cfuns.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="class.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="comm.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="compile_file.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="configure.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc32.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crctab.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="com\cw.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PACKAGES\DB.H">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debugmalloc.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumpstat.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ed.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="efun_protos.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="efunctions.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="efuns_incl.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="efuns_main.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eoperators.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_incl.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\function.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="function.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generate.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="icode.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interpret.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lex.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lint.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\localtime.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lpc.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lpc_incl.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lpc_to_c.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="malloc.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="malloc_incl.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\matrix.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\mudlib_stats.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="network_incl.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Notify.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opcodes.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="options.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="options_incl.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="origin.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="otable.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parse.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\parser.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parser_error.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="patchlevel.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="port.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="portability.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="preprocess.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="program.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qsort.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rc.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reclaim.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regexp.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="replace_program.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\runtime_config.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scratchpad.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simul_efun.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simulate.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="smalloc.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket_ctrl.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket_efuns.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sprintf.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="std.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="std_incl.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stralloc.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strstr.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swap.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="telnet.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trees.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\uids.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wrappedmalloc.h">
+      <Filter>Mudos Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Com\Resource.h">
+      <Filter>Mudos Resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Com\Mudos.rc">
+      <Filter>Mudos Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Com\Svr.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="grammar.y.pre" />
+  </ItemGroup>
+</Project>

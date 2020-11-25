@@ -1,0 +1,111 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: editsource - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\Users\ADMINI~1\AppData\Local\Temp\RSPF152.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "CONSOLE" /Fp"Debug/editsource.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\Downloads\MUDos\v22.2pre11\MUDOS\make_func.c"
+]
+Creating command line "cl.exe @E:\Users\ADMINI~1\AppData\Local\Temp\RSPF152.tmp" 
+Creating temporary file "E:\Users\ADMINI~1\AppData\Local\Temp\RSPF153.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/editsource.pdb" /debug /machine:I386 /out:"Debug/editsource.exe" /pdbtype:sept 
+.\Debug\edit_source.obj
+.\Debug\hash.obj
+.\Debug\make_func.obj
+]
+Creating command line "link.exe @E:\Users\ADMINI~1\AppData\Local\Temp\RSPF153.tmp"
+Creating temporary file "E:\Users\ADMINI~1\AppData\Local\Temp\RSPF154.bat" with contents
+[
+@echo off
+cd ..
+editsource\debug\editsource -configure
+editsource\debug\editsource -options -process grammar.y.pre -malloc -build_func_spec "cl /E " -build_efuns
+]
+Creating command line "E:\Users\ADMINI~1\AppData\Local\Temp\RSPF154.bat"
+Compiling...
+make_func.c
+bison.simple(317) : warning C4013: 'yyerror' undefined; assuming extern returning int
+make_func.y(116) : warning C4013: 'mf_fatal' undefined; assuming extern returning int
+make_func.y(317) : warning C4018: '>' : signed/unsigned mismatch
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Debug\editsource.exe
+
+D:\Downloads\MUDos\v22.2pre11\MUDOS>cl -DWIN32 -D_ALL_SOURCE -G4 comptest.c -o comptest 
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8168 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+comptest.c
+Microsoft (R) Incremental Linker Version 6.00.8168
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+/out:comptest.exe 
+/out:comptest.exe 
+comptest.obj 
+
+D:\Downloads\MUDos\v22.2pre11\MUDOS>if errorlevel 1 goto error 
+
+D:\Downloads\MUDos\v22.2pre11\MUDOS>del trash_me.err  1>nul 
+找不到 D:\Downloads\MUDos\v22.2pre11\MUDOS\trash_me.err
+
+D:\Downloads\MUDos\v22.2pre11\MUDOS>goto ok 
+
+unlink malloc.c: No such file or directory
+unlink mallocwrapper.c: No such file or directory
+系统找不到指定的文件。
+已复制         1 个文件。
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8168 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+func_spec.c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8168 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+uids_spec.c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8168 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+contrib_spec.c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8168 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+sockets_spec.c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8168 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+develop_spec.c
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8168 for 80x86
+Copyright (C) Microsoft Corp 1984-1998. All rights reserved.
+
+math_spec.c
+Using memory allocation package: smalloc.c
+SYS>copy plainwrapper.c mallocwrapper.c
+SYS>copy smalloc.c malloc.c
+SYS>cl /E  func_spec.c >func_spec.cpp
+SYS>cl /E  -I. packages/uids_spec.c >>func_spec.cpp
+SYS>cl /E  -I. packages/contrib_spec.c >>func_spec.cpp
+SYS>cl /E  -I. packages/sockets_spec.c >>func_spec.cpp
+SYS>cl /E  -I. packages/develop_spec.c >>func_spec.cpp
+SYS>cl /E  -I. packages/math_spec.c >>func_spec.cpp
+
+No "local_options" file present.  If you create one from "options.h",
+you can use it when you get a new driver, and you will be warned if there are
+changes to the real options.h which you should include in your local file.
+Writing build options to option_defs.c ...
+Creating 'grammar.y' from 'grammar.y.pre' ...
+Building compiler files ...
+Building efun tables ...
+
+
+
+<h3>Results</h3>
+editsource.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
